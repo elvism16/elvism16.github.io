@@ -337,27 +337,115 @@ template {
   display: none;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+@media (min-width: 480px) {
+  h1 {
+    font-size: calc(2.5rem + ((100vw - 30rem) / (100 - 30)) * (3.25 - 2.5));
+  }
+}
+@media (min-width: 1600px) {
+  h1 {
+    font-size: 3.25rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+}
+@media (min-width: 480px) {
+  h2 {
+    font-size: calc(2rem + ((100vw - 30rem) / (100 - 30)) * (3 - 2));
+  }
+}
+@media (min-width: 1600px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+@media (min-width: 480px) {
+  h3 {
+    font-size: calc(1.5rem + ((100vw - 30rem) / (100 - 30)) * (2 - 1.5));
+  }
+}
+@media (min-width: 1600px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+@media (min-width: 480px) {
+  h4 {
+    font-size: calc(1.25rem + ((100vw - 30rem) / (100 - 30)) * (1.75 - 1.25));
+  }
+}
+@media (min-width: 1600px) {
+  h4 {
+    font-size: 1.75rem;
+  }
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 480px) {
+  p {
+    font-size: calc(1rem + ((100vw - 30rem) / (100 - 30)) * (1.312 - 1));
+  }
+}
+
 .days {
-  font-family: "Days", sans-serif;
+  font-family: "Days", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .noway--regular {
-  font-family: "Noway", sans-serif;
+  font-family: "Noway", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .noway--regular-italic {
-  font-family: "Noway--italic", sans-serif;
+  font-family: "Noway--italic", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .noway--medium {
-  font-family: "Nowaymedium", sans-serif;
+  font-family: "Nowaymedium", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .noway--medium-italic {
-  font-family: "Nowaymedium--italic", sans-serif;
+  font-family: "Nowaymedium--italic", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .noway--bold {
-  font-family: "Nowaybold", sans-serif;
+  font-family: "Nowaybold", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .noway--bold-italic {
-  font-family: "Nowaybold--italic", sans-serif;
+  font-family: "Nowaybold--italic", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.font-showcase {
+  margin: 0 0 1.2rem;
+}
+.font-showcase > *:first-child {
+  margin: 0.3rem 0;
+}
+.font-showcase .definition {
+  background-color: #eee;
+  padding-left: 1rem;
+}
+
+.check-font-face {
+  margin: 3rem 0;
+}
+
+article {
+  max-width: 800px;
+}
+article h2 {
+  margin-bottom: 2rem;
 }
 
 @font-face {
@@ -435,14 +523,14 @@ template {
 html {
   height: 100%;
   font-size: 100%;
-  overflow: hidden;
 }
 
 body {
   background-color: #eee;
-  color: #333;
-  line-height: 1.618;
+  color: #292929;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   height: 100%;
+  line-height: 1.618;
   margin: 0;
   -ms-scroll-chaining: none;
   overscroll-behavior: none;
@@ -470,12 +558,4 @@ svg {
 ul,
 ol {
   list-style-type: none;
-}
-
-h1 {
-  font-family: "Days", sans-serif;
-}
-
-p {
-  font-family: "Noway", sans-serif;
 }
